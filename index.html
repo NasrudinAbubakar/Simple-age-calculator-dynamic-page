@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Age Calculator || Home</title>
+  </head>
+  <body>
+    <section class="main-section">
+      <span class="date"></span>
+      <form method="post" action="age_calculator.php">
+        <div class="form-container">
+          <span class="date"></span>
+          <h4 class="title">Enter Your Birth Date</h4>
+          <input
+            type="date"
+            class="age-input"
+            name="age"
+          />
+          <!-- <a onclick="submit" class="btn">Check</a> -->
+          <input type="submit" class="btn">
+        </div>
+      </form>
+    </section>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background: #000;
+        font-family: monospace;
+      }
+      .main-section {
+        position: relative;
+        height: 100vh;
+        width: 100vw;
+      }
+      .form-container {
+        position: absolute;
+        bottom: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 2px solid #8feaee;
+        border-radius: 5px;
+        padding: 2rem;
+        background: #fff;
+        box-shadow: 2px 5px 12px #fff;
+      }
+      .title {
+        margin-bottom: 0.5rem;
+        margin-left: 0.2rem;
+      }
+      .age-input {
+        display: block;
+        padding: 0.3rem;
+        color: #000;
+        border-radius: 3px;
+        background: silver;
+        letter-spacing: 0.25rem;
+        border: none;
+      }
+      .btn {
+        display: block;
+        text-decoration: none;
+        text-align: center;
+        width: 5rem;
+        background: #333;
+        color: #fff;
+        padding: 0.5rem;
+        border-radius: 10px;
+        margin-top: 0.7rem;
+        transition: 0.3s;
+        border: none;
+      }
+      .btn:hover {
+        background: #33faea;
+        color: #000;
+        transform: translateY(-2px);
+        cursor: pointer;
+      }
+    </style>
+  </body>
+</html>
